@@ -166,11 +166,11 @@
    cd transcode-app && sls deploy
    ```
 
-6. 上传视频文件到已经配置好的cos桶指定路径，则会自动转码。本示例中是cos桶test-123456789.cos.ap-shanghai.myqcloud.com下的/video/inputs/
+6. 上传视频文件到已经配置好的cos桶指定路径，则会自动转码。本示例中是cos桶`test-123456789.cos.ap-shanghai.myqcloud.com`下的`/video/inputs/`
 
-7. 转码成功后，文件将保存在您配置的输出桶路径中。本示例中是cos桶test-123456789.cos.ap-shanghai.myqcloud.com下的/video/outputs/
+7. 转码成功后，文件将保存在您配置的输出桶路径中。本示例中是cos桶`test-123456789.cos.ap-shanghai.myqcloud.com`下的`/video/outputs/`
 
-8. 如果需要调整转码配置，修改文件transcode/serverless.yml 后，重新部署云函数即可：
+8. 如果需要调整转码配置，修改文件`transcode/serverless.yml` 后，重新部署云函数即可：
 
    ```
    cd transcode && sls deploy
@@ -210,7 +210,7 @@ FFMPEG_CMD: ffmpeg -i {inputs} -vcodec copy -y -f {dst_format} -movflags frag_ke
 转码应用场景中提供了默认的ffmpeg工具，如果您想自定义ffmpeg，执行以下操作：
 
 1. 将样例中的ffmpeg替换成你自定义的ffmpeg。
-2. `transcode-app/transcode`目录下再次执行sls deploy部署更新。
+2. 在`transcode-app/transcode`目录下再次执行sls deploy部署更新。
 
 ```
  cd transcode && sls deploy
