@@ -316,8 +316,8 @@ def main_handler(event, context):
     dst_path = os.environ.get('DST_PATH')  # 输出桶目录
     dst_format = os.environ.get('DST_FORMAT')  # 转码格式
     cmd_origin = '/tmp/' + os.environ.get('FFMPEG_CMD')  # ffmpeg命令
-    secret_id = os.environ.get('TENCENTCLOUD_SECRETID')
-    secret_key = os.environ.get('TENCENTCLOUD_SECRETKEY')
+    secret_id = os.environ.get('TENCENT_SECRET_ID')
+    secret_key = os.environ.get('TENCENT_SECRET_KEY')
     token = os.environ.get('TENCENTCLOUD_SESSIONTOKEN')
     ffmpeg_debug = os.environ.get(
         'FFMPEG_DEBUG',
