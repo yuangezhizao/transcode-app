@@ -1,0 +1,3 @@
+#应用信息
+app: transcodeApp # 您需要配置成您的应用名称
+stage: dev # 环境名称，默认为dev
